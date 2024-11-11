@@ -1,9 +1,7 @@
-head {
-    width: 0;
-}
-
 header {
     background-color: #212121;
+    position: fixed;
+    top: 0px;
 }
 
 header h1 {
