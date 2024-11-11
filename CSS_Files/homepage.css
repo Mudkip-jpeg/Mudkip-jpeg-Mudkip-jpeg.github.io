@@ -3,7 +3,8 @@ header {
 }
 
 header h1 {
-    color: #fff
+    color: #fff;
+    font-family: Garamond;
 }
 
 main, body {
