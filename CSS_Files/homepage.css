@@ -3,6 +3,7 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
+    height: 150px;
     margin: 0px;
     padding: 0px;
     left: 0px;
@@ -13,7 +14,46 @@ header h1 {
     font-family: Garamond;
 }
 
-main, body {
+body {
+    position: relative;
+    bottom: 400px;
     background-color: #5a5a5a;
     color: #fff;
+    top: 150px;
+}
+
+h2 {
+    position: relative;
+    font-size: 125px;
+    padding-left: 50px;
+    top: 0px;
+}
+
+p {
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    width: 800px;
+    font-size: 25px;
+    top: 125px;
+    left: 50px;
+    background-color: #2f2f2f;
+    text-align: left;
+    float: left;
+    padding: 10px;
+    border: 3px solid #1d1d1d;
+    border-radius: 25px;
+}
+
+img {
+    border: 3px solid #1b3c90;
+    border-radius: 50px;
+    width: 800px;
+    height: auto;
+    translate: 150px;
+}
+
+a {
+    color: blue;
 }
