@@ -175,7 +175,11 @@ a:hover {
 
 .footer {
     grid-area: footer;
-    background-color: white;
+    font-size: 150%;
+    padding: 0% 25%;
+    font-family: "Trebuchet MS";
+    text-align: justify;
+    color: #FFFFFF;
 }
 
 .header {
