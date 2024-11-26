@@ -1,0 +1,230 @@
+body {
+    background-color: #343434;
+    height: 1000px;
+    margin: 0;
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.1fr repeat(8, 1fr) 0.1fr;
+    grid-template-rows: 0.1fr repeat(3, 1fr) 0.1fr;
+    gap: 10px 0;
+    grid-template-areas:
+        ". . . . . . . . . ."
+        ". logo logo . login login . burger burger ."
+        ". logo logo . . . . burger burger ."
+        ". name name name . links links links . ."
+        ". . . . . . . . . .";
+    width: 100%;
+    background-color: #727272;
+    height: 27.5%;
+    border-bottom: 5px solid #343434;
+    z-index: 20;
+}
+
+.logo {
+    grid-area: logo;
+    align-content: center;
+}
+
+.logo img {
+    width: auto;
+    height: 100%;
+}
+
+.name {
+    grid-area: name;
+}
+
+.name h1 {
+    color: white;
+    font-family: "Trebuchet MS";
+    font-weight: 700;
+}
+
+.links {
+    grid-area: links;
+}
+
+.burger {
+    grid-area: burger;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 90%;
+}
+
+.burger ul {
+    display: block;
+    position: relative;
+    
+}
+
+.burger ul:last-child {
+    width: 70%;
+    flex-basis: 90%;
+}
+
+.burger ul li {
+    margin-bottom: 0;
+    height: 120%;
+    width: 120%;
+    text-align: left;
+    padding: 1em;
+    list-style: none;
+    background-color: #414141; 
+    text-decoration: none;
+}
+
+
+.burger input[type='checkbox'], nav label {
+    display: none;
+}
+
+.burger label {
+    text-align: right;
+    display: block;
+    padding: 0.5em;
+    line-height: 1.6em;
+    align-self: center;
+    font-size: 300%;
+}
+
+.burger a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+input[type='checkbox']:not(:checked)+ul {
+    display: none;
+}
+
+.login {
+    grid-area: login;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(16, 0.5fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace"
+      "Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace Header-whitespace"
+      ". . . . . . . . . ."
+      ". Mortgages Mortgages Mortgages Mortgages Savings Savings Savings Savings ."
+      ". Mortgages Mortgages Mortgages Mortgages Savings Savings Savings Savings ."
+      ". Mortgages Mortgages Mortgages Mortgages Savings Savings Savings Savings ."
+      ". . . . . . . . . ."
+      ". Loans Loans Loans Loans Accounts Accounts Accounts Accounts ."
+      ". Loans Loans Loans Loans Accounts Accounts Accounts Accounts ."
+      ". Loans Loans Loans Loans Accounts Accounts Accounts Accounts ."
+      ". . . . . . . . . ."
+      ". Insurance Insurance Insurance Insurance Cards Cards Cards Cards ."
+      ". Insurance Insurance Insurance Insurance Cards Cards Cards Cards ."
+      ". Insurance Insurance Insurance Insurance Cards Cards Cards Cards ."
+      ". . . . . . . . . ."
+      ". Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note ."
+      ". Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note Construction-note ."
+      ". . . . . . . . . .";
+    width: 100%;
+    height: 100%;
+}
+  
+.Header-whitespace { 
+    grid-area: Header-whitespace; 
+}
+  
+.Mortgages { 
+    grid-area: Mortgages;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+  
+.Savings { 
+    grid-area: Savings;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+  
+.Loans { 
+    grid-area: Loans;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px; 
+}
+  
+.Accounts { 
+    grid-area: Accounts;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px; 
+}
+  
+.Insurance { 
+    grid-area: Insurance;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px; 
+}
+  
+.Cards { 
+    grid-area: Cards;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px; 
+}
+  
+.Construction-note { 
+    grid-area: Construction-note;
+    background-color: #414141;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+  
+.servicebox {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: repeat(3, 0.5fr); 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "Title-text Title-text . ."
+      "Description Description Description Description"
+      ". . Link Link"; 
+    width: 100%; 
+    height: 100%;
+    z-index: 10; 
+}
+
+.Title-text { 
+    left: 5%;
+    grid-area: Title-text; 
+}
+  
+.Description { 
+    left: 5%;
+    grid-area: Description; 
+}
+  
+.Link { 
+    left: 5%;
+    grid-area: Link;
+    font-size: 150%;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+

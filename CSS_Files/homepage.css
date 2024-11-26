@@ -131,13 +131,19 @@ input[type='checkbox']:not(:checked)+ul {
 .hero {
     grid-area: hero-image;
     align-content: center;
-}
-
-.hero img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    background-image: url(../imgs/Business-man.png);
+    color: #343434;
+    background-size: cover;
+    text-align: center;
+    font-size: 250%;
+    font-weight: 200%;
+    font-family: "Trebuchet MS";
+
 }
+
 
 .welcome {
     grid-area: welcome;
@@ -155,7 +161,7 @@ input[type='checkbox']:not(:checked)+ul {
     grid-area: paragraph;
     align-content: center;
     text-align: justify;
-    padding: 10px;
+    padding: 5%;
 }
 
 .paragraph p {
